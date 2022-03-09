@@ -3,7 +3,7 @@ const favicon = require('express-favicon');
 const { json } = require("express/lib/response");
 require("dotenv").config();
 const app = express();
-app.use(favicon(__dirname + '/public/favicon.ico'));
+app.use(favicon(__dirname + '/public/favicon.png'));
 const mysql = require("mysql");
 var bodyParser = require('body-parser')
 var cors =require("cors");
