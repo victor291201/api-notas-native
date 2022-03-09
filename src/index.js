@@ -11,7 +11,9 @@ console.log("server Works")
 //configuraciones
 app.set("port",process.env.PORT||3000)
 app.use(bodyParser.json());
+
 app.use(cors())
+app.use('/public', express.static(__dirname + '/public/img'))
 
 //middlewares
 
