@@ -15,7 +15,7 @@ app.set("port",process.env.PORT||3000)
 app.use(bodyParser.json());
 
 app.use(cors())
-app.use('/public', express.static(__dirname + '/public/img'))
+app.use('/public', express.static(__dirname + '/public'))
 
 //middlewares
 
