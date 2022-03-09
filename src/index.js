@@ -1,5 +1,6 @@
 const express = require("express");
 const { json } = require("express/lib/response");
+require("dotenv").config();
 const app = express();
 const mysql = require("mysql");
 var bodyParser = require('body-parser')
@@ -8,7 +9,7 @@ var cors =require("cors");
 const index = require("./routes/")
 console.log("server Works")
 //configuraciones
-app.set("port",3000)
+app.set("port",process.env.PORT||3000)
 app.use(bodyParser.json());
 app.use(cors())
 
