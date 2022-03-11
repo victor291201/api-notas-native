@@ -1,7 +1,6 @@
 const express = require("express");
 const app = express();
 const { Client } = require('pg')
-const Connection = require("mysql/lib/Connection");
 
 const conexion = new Client({
     user: 'ydvrjhacybqajj',
@@ -17,6 +16,6 @@ conexion.connect(function(error){
     }else{
         console.log("base de datos conectada")
     }
-});
+})
 
 module.exports = conexion;
